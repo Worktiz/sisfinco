@@ -53,9 +53,9 @@ h2{
 	transition: .5s;
 }
 input:focus ~ label,
-input:focus ~ :valid{
+input:valid ~ label{
 	top: -5px;
-}
+} 
 
 .inputbox input{
 	width: 100%;
@@ -74,27 +74,6 @@ input:focus ~ :valid{
 	color: #FFFFFF;
 	font-size: 1.2em;
 	top: 20px;
-}
-
-.forget{
-	margin: -15px 0 15px;
-	font-size: .9em;
-	color: #fff;
-	display: flex;
-	justify-content: center;
-}
-
-.forget label input{
-	margin-right: 3px;
-}
-
-.forget label a{
-	color: #fff;
-	text-decoration: none;
-}
-
-.forget label a:hover{
-	text-decoration: underline;
 }
 
 .button {

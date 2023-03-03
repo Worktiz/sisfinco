@@ -20,7 +20,6 @@
 		<div class="logo">Menu</div>
 		<input type="checkbox" id="toggle">
 		<label for="toggle"><img class="menu" src="assets/menu.svg" alt="menu"></label>
-
 		<nav class="navigation">
 			<ul>
 				<li><a href="">Inicio</a></li>
@@ -32,7 +31,7 @@
 				</li>
 				<li><a href="">Credito</a>
 					<ul>
-						<li><a href="">Nuevo Financiamiento</a></li>
+					<li><a href="">Nuevo Financiamiento</a></li>
 					<li><a href="">Editar Financiamiento</a></li>
 					</ul>
 					
@@ -41,14 +40,24 @@
 				<li><a href="">Cobranza</a>
 					<ul>
 					<li><a href="">Estado de Credito</a></li>
+					<li><a href="">Añadir Pago</a></li>
 					<li><a href="">Editar Credito</a></li>
 					</ul>
 				</li>
+				<li><a href="">Usuarios</a>
+					<ul>
+					<li><a href="">Nuevo Usuario</a></li>
+					<li><a href="">Listo de Usuarios</a></li>
+					</ul>
+				</li>
 				<li><a href="">Contactos</a></li>
-				<li><a href="../close_sesion.php"><img src="assets/power.svg" alt="Salir"></a></li>
+				
+				<li><a href="../close_sesion.php"><img src="assets/power.svg" alt="Salir" class="exit"></a></li>
 			</ul>
 		</nav>
 	</header>
+
+	<div class="hero"></div>
 	
 </body>
 </html>

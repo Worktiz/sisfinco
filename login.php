@@ -56,7 +56,7 @@
 					<h2>Iniciar Sesión</h2>
 					<div class="inputbox">
 						<ion-icon name="person-circle-outline"></ion-icon>
-						<input type="text" name="usuario">
+						<input type="text" name="usuario" autocomplete="off">
 						<label>Usuario</label>
 					</div>
 					<div class="inputbox">
