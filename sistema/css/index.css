@@ -14,6 +14,10 @@ body {
 	font-family: 'Poppins', sans-serif;
 	min-width: 100vh;
 	box-sizing: border-box;
+	min-height: 100vh;
+	background: url(../img/background.png) no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .header{
@@ -144,10 +148,109 @@ body {
 
 }
 
-.hero{
-	min-height: 100vh;
-	background: url(../img/background.png) no-repeat;
-	background-position: center;
-	background-size: cover;
+/*----------- Usuario ------------*/
+.user{
+	color: #fff;
+	font-size: 30px;
+	margin-right: 15px;
 }
 
+.photouser{
+	margin-right: -10px;
+    width: 25px;
+    height: 25px;
+    top: 0;
+}
+
+
+/*----------- Fin Usuario ------------*/
+
+/*----------- Mensaje Error y Exito ------------*/
+.msg_error{
+	background-color: rgba(188, 3, 3, 0.5);
+	color: #fff;
+}
+
+.msg_save{
+	background-color: rgba(22, 234, 20, 0.5);
+	color: #fff;
+}
+
+.alert{
+	width: 100%;
+	background: rgba(234, 20, 20, 0.5);
+	border-radius: 6px;
+	margin: 20px auto;
+}
+
+.alert p{
+	padding: 10px;
+}
+/*----------- Fin Mensaje Error y Exito ------------*/
+
+/*----------- Formulario registro usuario ------------*/
+.form-register {
+	width: 400px;
+	background-color: rgba(36, 48, 60, 0.5);
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	box-shadow: 7px 13px 37px #F706FE;
+}
+
+.form-register h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.controls{
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.form-register .botons{
+	width: 100%;
+	background: #1f53c5;
+	border: none;
+	padding: 12px;
+	color: #FFF;
+	margin: 16px 0;
+	font-size: 16px;
+}
+
+.type_user{
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.noitemone{
+	display: block;
+	width: 100%;
+	font-size: 15pt;
+	padding: 5px;
+	border: 1px solid #1f53c5;
+	border-radius: 5px;
+	background-color: rgba(154, 15, 125, 0.5);
+	color: #FFF;
+	text-align: center;
+}
+
+label {
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	font-size: 15pt
+}
+/*----------- Formulario registro usuario ------------*/
