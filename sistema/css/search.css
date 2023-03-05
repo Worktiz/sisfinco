@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;500;600;700&display=swap');
+
+
+
+.search{
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.search .btn_search{
+	background: ##FAF2FB;
+	color: #0F0404;
+	padding: 10px 15px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+.btn_search:hover{
+	background: #810689;
+}
+
+.link_search{
+	background: rgba(243, 86, 245, 0.5);
+	color: #FFF;
+	border-radius: 5px;
+}

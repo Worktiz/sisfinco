@@ -8,8 +8,6 @@ session_start();
 ?>
 
 <?php include "includes/scripts.php"; ?>
-
-
 <header class="header">
 		<div><span class="user"><?php echo $_SESSION['nombre']; ?></span>
 		<img class="photouser" src="img/user.png" alt="Usuario"></div>

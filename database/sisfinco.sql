@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-03-2023 a las 19:57:25
+-- Tiempo de generación: 05-03-2023 a las 04:09:03
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -179,7 +179,13 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idusuario`, `nombre`, `correo`, `usuario`, `clave`, `rol`, `estatus`) VALUES
-(1, 'Wilka', 'wilka@gmail.com', 'admin', '202cb962ac59075b964b07152d234b70', 1, 1);
+(1, 'Wilka', 'wilka@gmail.com', 'admin', '202cb962ac59075b964b07152d234b70', 1, 1),
+(2, 'maria', 'maria@gmail.com', 'maria', '202cb962ac59075b964b07152d234b70', 2, 1),
+(3, 'wilians', 'wilians@gmail.com', 'wilians', '202cb962ac59075b964b07152d234b70', 3, 1),
+(4, 'roxana', 'roxana@gmail.com', 'roxana', '202cb962ac59075b964b07152d234b70', 2, 1),
+(5, 'wendy', 'wendy@gmail.com', 'wendy', '202cb962ac59075b964b07152d234b70', 3, 1),
+(6, 'david', 'david@gmail.com', 'david', '202cb962ac59075b964b07152d234b70', 2, 1),
+(7, 'albert', 'albert@gmail.com', 'albert', '202cb962ac59075b964b07152d234b70', 3, 1);
 
 --
 -- Índices para tablas volcadas
@@ -304,7 +310,7 @@ ALTER TABLE `rol`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restricciones para tablas volcadas

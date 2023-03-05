@@ -32,7 +32,7 @@
 				<li><a href="">Usuarios</a>
 					<ul>
 					<li><a href="new_user.php">Nuevo Usuario</a></li>
-					<li><a href="">Listo de Usuarios</a></li>
+					<li><a href="user_list.php">Listo de Usuarios</a></li>
 					</ul>
 				</li>
 				<li><a href="">Contactos</a></li>
