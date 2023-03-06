@@ -417,14 +417,13 @@ input {
 .data_delete{
   text-align: center;
   color: rgb(255, 255, 255);
-  background: #24303c;
-  height: 300px;
-  transform: translateX(50%);
-  transform: translateY(80%);
 }
 
 .data_delete h2{
   font-size: 16pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .data_delete span{
@@ -444,11 +443,11 @@ input {
 }
 
 .btn_cancel{
-	background:  #42b343;
+	background:  hsla(121, 100%, 64%, 0.322);
 }
 
 .btn_ok{
-	background: red;
+	background: rgba(255, 21, 21, 0.514);
 }
 
 .data_delete form{
@@ -456,6 +455,23 @@ input {
 	margin: auto;
 	padding: 20px 50px;
 	border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.cuadre{
+  width: 500px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  left: 30%;
+  transform: translateY(100%);
+  background: rgba(235, 53, 219, 0.658);
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+}
 /*----------------------- Fin Eliminar Usuario ---------------------*/
