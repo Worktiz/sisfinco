@@ -5,13 +5,14 @@ include "../conexion.php";
 
 		if ($_POST['idusuario'] == 1) {
 			header ("Location: user_list.php");
+			mysqli_close($conection);
 			exit;
 		}
 		$idusuario = $_POST['idusuario'];
 
 		//$query_delete = mysqli_query($conection, "DELETE FROM usuario WHERE idusuario = '$idusuario'" );
 		$query_delete = mysqli_query($conection, "UPDATE usuario SET estatus = 0 WHERE idusuario = $idusuario");
-
+		mysqli_close($conection);
 
 		if ($query_delete) {
 			header ("Location: user_list.php");
@@ -23,6 +24,7 @@ include "../conexion.php";
 	
 	if (empty($_REQUEST['id']) || $_REQUEST['id'] == 1) {
 		header ("Location: user_list.php");
+		mysqli_close($conection);
 	}else{
 
 		
@@ -36,6 +38,8 @@ include "../conexion.php";
 											ON u.rol = r.idrol
 											WHERE 
 											u.idusuario = $idusuario" );
+		mysqli_close($conection);
+
 
 		$result = mysqli_num_rows($query);
 
@@ -46,7 +50,7 @@ include "../conexion.php";
 				$rol = $data['rol'];
 			}
 			}else{
-				header ("Location: .php");
+				header ("Location: user_list.php");
 			}
 			}
 		

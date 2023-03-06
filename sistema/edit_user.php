@@ -50,7 +50,7 @@
 					$alert = '<p class="msg_error">Error al Actualizar el Usuario</p>';
 				}
 			}
-		
+			mysqli_close($conection);
 	}
 
 
@@ -61,6 +61,7 @@
 
 if (empty($_GET['id'])) {
 	header('Location: lista_usuarios.php');
+	mysqli_close($conection);
 }
 
 $iduser = $_GET['id'];
@@ -70,6 +71,8 @@ FROM usuario u
 INNER JOIN rol r
 ON u.rol = r.idrol
 WHERE idusuario = $iduser");
+
+mysqli_close($conection);
 
 $result_sql = mysqli_num_rows($sql);
 
@@ -129,7 +132,9 @@ if ($result_sql == 0) {
 
 
 		<?php
+		include "../conexion.php";
 			$query_rol = mysqli_query($conection,"SELECT * FROM rol");
+			mysqli_close($conection);
 			$result_rol = mysqli_num_rows($query_rol);
 		?>
 

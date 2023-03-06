@@ -375,6 +375,14 @@ table td {
   font-size: 25px;
 }
 
+.notresult{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(50%);
+  transform: translatey(750%);
+  color: #FFF;
+}
 /*----------------------- Buscador ---------------------*/
 
 .search {
