@@ -75,7 +75,7 @@ include "../conexion.php";
 
 			 <form method="post" action="">
 			 	<input type="hidden" name="idusuario" value="<?php echo $idusuario; ?>">
-			 	<a href="lista_usuarios.php" class="btn_cancel">Cancelar</a>
+			 	<a href="user_list.php" class="btn_cancel">Cancelar</a>
 			 	<input type="submit" value="Aceptar" class="btn_ok">
 			 </form>
 		</div>
