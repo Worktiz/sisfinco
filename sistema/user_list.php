@@ -113,8 +113,8 @@
 						
 					
 				 ?>
-				<li><a href="?pagina=<?php echo 1; ?>"><img src="assets/arrow_ini.svg"></a></li>
-				<li><a href="?pagina=<?php echo $pagina-1; ?>"><img src="assets/arrow_left.svg"></a></li>
+				<li class="selector"><a href="?pagina=<?php echo 1; ?>"><img src="assets/arrow_ini.svg"></a></li>
+				<li class="selector"><a href="?pagina=<?php echo $pagina-1; ?>"><img src="assets/arrow_left.svg"></a></li>
 				<?php   
 				}
 				for ($i=1; $i <= $total_paginas; $i++) { 
@@ -133,8 +133,8 @@
 					
 
 				 ?>
-				<li><a href="?pagina=<?php echo $pagina+1; ?>"><img src="assets/arrow_rigth.svg"></a></li>
-				<li><a href="?pagina=<?php echo $total_paginas; ?>"><img src="assets/arrow_final.svg"></a></li>
+				<li><a class="selector" href="?pagina=<?php echo $pagina+1; ?>"><img src="assets/arrow_rigth.svg"></a></li>
+				<li><a class="selector" href="?pagina=<?php echo $total_paginas; ?>"><img src="assets/arrow_final.svg"></a></li>
 
 			<?php } ?>
 			</ul>
