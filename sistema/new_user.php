@@ -18,7 +18,7 @@
 
 
 			$query = mysqli_query($conection,"SELECT * FROM usuario WHERE usuario = '$user' OR correo = '$email' ");
-
+			mysqli_close($conection);
 			$result = mysqli_fetch_array($query);
 
 			if ($result > 0) {
@@ -68,6 +68,7 @@
 
 		<?php
 			$query_rol = mysqli_query($conection,"SELECT * FROM rol");
+			mysqli_close($conection);
 			$result_rol = mysqli_num_rows($query_rol);
 		?>
 

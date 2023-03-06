@@ -106,13 +106,12 @@ if ($result_sql == 0) {
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<?php include "includes/scripts.php"; ?>
 	<title>Editar Usuario | Sisfinco</title>
 </head>
 <body>
-	<?php include "includes/header.php"; ?>
+		<?php include "includes/header.php"; ?>
 	
-	<section class="user_list">
+	<section class="form-register">
 		
 		<h4>Editar Usuario</h4>
 		<div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
@@ -134,7 +133,7 @@ if ($result_sql == 0) {
 			$result_rol = mysqli_num_rows($query_rol);
 		?>
 
-		<select name="rol" id="rol" class="noitemone">
+		<select name="rol" id="rol" class="noItemOne">
 			
         <?php  
 
