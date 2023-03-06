@@ -65,7 +65,7 @@ include "../conexion.php";
 </head>
 <body>
 	<?php include "includes/header.php"; ?>
-
+	<div class="cuadre">
     <section class="user_list">
 		<div class="data_delete">
 			 <h2>¿Esta Seguro de Eliminar el Siguiente Usuario</h2>
@@ -80,6 +80,6 @@ include "../conexion.php";
 			 </form>
 		</div>
 	</section>
-
+	</div>
 </body>
 </html>
