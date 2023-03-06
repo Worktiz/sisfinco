@@ -218,12 +218,13 @@ body {
 
 .form-register .botons {
   width: 100%;
-  background: #1f53c5;
+  background: rgba(65, 34, 236, 0.7);
   border: none;
   padding: 12px;
   color: #fff;
   margin: 16px 0;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 .type_user {
@@ -242,6 +243,10 @@ body {
   background-color: rgba(154, 15, 125, 0.5);
   color: #fff;
   text-align: center;
+}
+
+.noitemone option:first-child{
+  display: none;
 }
 
 label {
@@ -332,22 +337,30 @@ table td {
 }
 
 .select a:hover {
-  background: ##a109b8;
+  background: #a109b8;
 }
 
 .selectPage {
   color: #fff;
   background: #ff00de;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
   position: relative;
 }
 
 .page {
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
+}
+
+.selectPage, .page{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .selector {
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
+  font-size: 25px;
 }
 
 /*----------------------- Buscador ---------------------*/
@@ -399,3 +412,50 @@ input {
 }
 
 /*----------------------- Fin Buscador ---------------------*/
+
+/*----------------------- Inicio Eliminar Usuario ---------------------*/
+.data_delete{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background: #24303c;
+  height: 300px;
+  transform: translateX(50%);
+  transform: translateY(80%);
+}
+
+.data_delete h2{
+  font-size: 16pt;
+}
+
+.data_delete span{
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.btn_cancel, .btn_ok{
+  width: 124px;
+  background: rgba(230, 29, 29, 0.7);
+  display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+  text-decoration: none;
+}
+
+.btn_cancel{
+	background:  #42b343;
+}
+
+.btn_ok{
+	background: red;
+}
+
+.data_delete form{
+	background: initial;
+	margin: auto;
+	padding: 20px 50px;
+	border: 0;
+}
+
+/*----------------------- Fin Eliminar Usuario ---------------------*/
