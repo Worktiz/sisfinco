@@ -27,8 +27,6 @@
 
 					if (empty($busqueda)) {
 						header("Location: user_list.php");
-					}else{
-						echo '<h2 class="notresult">No hay resultados</h2>';
 					}
 
  				?>
@@ -120,7 +118,7 @@ WHERE (
 					<a class="delete" href="delete_user.php?id=<?php echo $data['idusuario'];?>"><img src="assets/delete.svg" class="delete"></a>
 
 					<?php 
-				}
+				
 
 					 ?>
 
@@ -176,7 +174,12 @@ WHERE (
 
 		</div>
 
+		<?php
+					}else{
+			echo '<h2 class="notresult">No hay resultados</h2>';
+		}
 		
+		?>
 
 	</section>
 	</body>
