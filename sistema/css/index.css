@@ -443,11 +443,15 @@ input {
 }
 
 .btn_cancel{
-	background:  hsla(121, 100%, 64%, 0.322);
+	background:  rgba(27, 222, 31, 0.425);
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .btn_ok{
 	background: rgba(255, 21, 21, 0.514);
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .data_delete form{
