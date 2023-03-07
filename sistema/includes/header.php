@@ -1,6 +1,5 @@
 <?php 
 
-session_start();
 	if (empty($_SESSION)) {
 		header('location: ../');
 	}
@@ -9,7 +8,7 @@ session_start();
 
 <?php include "includes/scripts.php"; ?>
 <header class="header">
-		<div><span class="user"><?php echo $_SESSION['nombre']; ?></span>
+		<div><span class="user"><?php echo $_SESSION['nombre'].'-'.$_SESSION['rol']; ?></span>
 		<img class="photouser" src="img/user.png" alt="Usuario"></div>
 		<span class="user"> | </span>
 		<div class="logo">Menu</div>

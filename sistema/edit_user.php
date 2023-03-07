@@ -1,5 +1,12 @@
 <?php 
 	
+	session_start();
+	if ($_SESSION['rol'] != 1) {
+		header ("Location: ./");
+	}
+
+
+
 	include "../conexion.php";
 
 	if (!empty($_POST)) {
