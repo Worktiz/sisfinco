@@ -443,6 +443,12 @@ input {
   color: rgb(255, 255, 255);
 }
 
+.data_delete div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .data_delete h2{
   font-size: 16pt;
   display: flex;

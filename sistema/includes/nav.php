@@ -12,7 +12,7 @@
 				<li><a href="">Clientes</a>
 					<ul>
 						<li><a href="new_client.php">Nuevo Cliente</a></li>
-						<li><a href="">Lista Clientes</a></li>
+						<li><a href="client_list.php">Lista Clientes</a></li>
 					</ul>
 				</li>
 				

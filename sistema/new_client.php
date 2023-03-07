@@ -57,7 +57,7 @@
 		<div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
 		<form action="" method="POST">
         <label for="cedularif">Ingrese Cedula O RIF</label>
-		<input class="controls" type="text" name="cedularif" id="cedularif" placeholder="Ingrese Cedula o RIF">
+		<input class="controls" type="number" name="cedularif" id="cedularif" placeholder="Ingrese Cedula o RIF">
 		<label for="nombre">Nombre y Apellido</label>
 		<input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre y Apellido">
 		<label for="correo">Correo</label>

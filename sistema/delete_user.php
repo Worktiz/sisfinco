@@ -79,10 +79,15 @@ include "../conexion.php";
     <section class="user_list">
 		<div class="data_delete">
 			 <h2>¿Esta Seguro de Eliminar el Siguiente Usuario</h2>
+			 <div>
 			 <p>Nombre: <span><?php echo $nombre; ?></span></p>
+			 </div>	
+			 <div>
 			 <p>Usuario: <span><?php echo $usuario; ?></span></p>
+			 </div>
+			 <div>
 			 <p>Tipo de Usuario: <span><?php echo $rol; ?></span></p>
-
+			 </div>
 			 <form method="post" action="">
 			 	<input type="hidden" name="idusuario" value="<?php echo $idusuario; ?>">
 			 	<a href="user_list.php" class="btn_cancel">Cancelar</a>
