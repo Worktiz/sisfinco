@@ -11,7 +11,7 @@
 				
 				<li><a href="">Clientes</a>
 					<ul>
-						<li><a href="">Nuevo Cliente</a></li>
+						<li><a href="new_client.php">Nuevo Cliente</a></li>
 						<li><a href="">Lista Clientes</a></li>
 					</ul>
 				</li>

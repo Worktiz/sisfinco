@@ -198,6 +198,10 @@ body {
   box-shadow: 7px 13px 37px #f706fe;
 }
 
+.form-register input::placeholder{
+color: #FFF;
+}
+
 .form-register h4 {
   font-size: 22px;
   margin-bottom: 20px;
