@@ -28,7 +28,7 @@
 					<li><a href="">Estado de Credito</a></li>
 					<li><a href="">Añadir Pago</a></li>
 					<li><a href="">Editar Credito</a></li>
-					<li><a href="search_expe.php">Expedientes</a></li>
+					<li><a href="search_exp.php">Expedientes</a></li>
 					</ul>
 				</li>
 				<?php
