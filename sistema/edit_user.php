@@ -4,9 +4,6 @@
 	if ($_SESSION['rol'] != 1) {
 		header ("Location: ./");
 	}
-
-
-
 	include "../conexion.php";
 
 	if (!empty($_POST)) {
@@ -15,7 +12,7 @@
 			$alert= '<p class=""msg_error">Todos Los Campos Son Obligatorios</p>';
 		}else{
 			
-			$idUsuario = $_POST['idUsuario'];
+			$idUsuario = $_POST['id'];
 			$nombre = $_POST['nombre'];
 			$email = $_POST['correo'];
 			$user = $_POST['usuario'];
@@ -23,8 +20,6 @@
 			$rol = $_POST['rol'];
 
 }
-
-
 			$query = mysqli_query($conection,"SELECT * FROM usuario  
                WHERE (usuario = '$user' AND idUsuario != $idUsuario) 
 				OR  (correo = '$email'  AND idUsuario != $idUsuario) ");
@@ -32,6 +27,7 @@
 
 
 			$result = mysqli_fetch_array($query);
+			$result = count($result);
 
 			if ($result > 0) {
 				$alert = '<p class="msg_error">El Correo o El Usuario Ya existe</p>';
@@ -57,21 +53,16 @@
 					$alert = '<p class="msg_error">Error al Actualizar el Usuario</p>';
 				}
 			}
-			mysqli_close($conection);
+			
 	}
-
-
-
-
-
 //Mostrar
 
-if (empty($_GET['id'])) {
+if (empty($_REQUEST['id'])) {
 	header('Location: user_list.php');
 	mysqli_close($conection);
 }
 
-$iduser = $_GET['id'];
+$iduser = $_REQUEST['id'];
 
 $sql = mysqli_query($conection, "SELECT u.idusuario, u.nombre, u.correo, u.usuario, (u.rol) AS idrol, (r.rol) AS rol
 FROM usuario u
@@ -126,7 +117,7 @@ if ($result_sql == 0) {
 		<h4>Editar Usuario</h4>
 		<div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
 		<form action="" method="POST">
-        <input type="hidden" name="idUsuario" value="<?php echo $iduser; ?>">
+        <input type="hidden" name="id" value="<?php echo $iduser; ?>">
 		<label for="nombre">Nombre y Apellido</label>
 		<input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre y Apellido" value="<?php echo $nombre; ?>">
 		<label for="correo">Correo</label>
