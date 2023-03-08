@@ -1,9 +1,5 @@
 <?php 
-	
 	session_start();
-	if ($_SESSION['rol'] != 1) {
-		header ("Location: ./");
-	}
 	include "../conexion.php";
 
 	if (!empty($_POST)) {
@@ -18,7 +14,7 @@
 			$correo = $_POST['correo'];
 			$telefono = $_POST['telefono'];
 			$direccion = $_POST['direccion'];
-			
+
 					$sql_update = mysqli_query($conection,"UPDATE cliente
 															SET cedularif = '$cedularif', nombre = '$nombre', correo = '$correo', telefono = '$telefono', direccion = '$direccion' 
 															WHERE idcliente = $idClient");
