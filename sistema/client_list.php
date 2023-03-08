@@ -21,7 +21,7 @@ include "../conexion.php";
 	<section class="user_list">
 
 		<h1>Lista de Clientes</h1>
-		<a href="new_client.php" class="btn_new">Añadir Usuario</a>
+		<a href="new_client.php" class="btn_new">Añadir Cliente</a>
 
 		<form action="search_client.php" method="get" class="search ">
 			<input type="text" name="busqueda" id="busqueda" placeholder="Ingrese Busqueda" class="link_search">

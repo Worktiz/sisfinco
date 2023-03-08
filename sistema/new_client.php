@@ -56,8 +56,8 @@
 		<h4>Registro de Cliente</h4>
 		<div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
 		<form action="" method="POST">
-        <label for="cedularif">Ingrese Cedula O RIF</label>
-		<input class="controls" type="number" name="cedularif" id="cedularif" placeholder="Ingrese Cedula o RIF">
+        <label for="cedularif">Ingrese Cedula</label>
+		<input class="controls" type="number" name="cedularif" id="cedularif" placeholder="Ingrese Cedula">
 		<label for="nombre">Nombre y Apellido</label>
 		<input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre y Apellido">
 		<label for="correo">Correo</label>
