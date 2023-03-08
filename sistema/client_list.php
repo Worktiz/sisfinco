@@ -77,10 +77,14 @@ include "../conexion.php";
                 <td><?php echo $data['direccion']; ?></td>
 				<td>
 					<a class="edit" href="edit_client.php?id=<?php echo $data['idcliente'];?>"><img src="assets/edit.svg" class="edit"></a>
-								
+						<?php
+						if ($_SESSION['rol'] == 1 || $_SESSION['rol'] == 2) {
+							
+						?>		
 					<a class="delete" href="delete_client.php?id=<?php echo $data['idcliente'];?>"><img src="assets/delete.svg" class="delete"></a>
 					<?php 
 				}
+			}
 					 ?>
 				</td>
 			</tr>
