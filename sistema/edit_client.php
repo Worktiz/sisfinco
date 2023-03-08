@@ -18,28 +18,10 @@
 			$correo = $_POST['correo'];
 			$telefono = $_POST['telefono'];
 			$direccion = $_POST['direccion'];
-
-            $result = 0;
-
-            if (is_numeric($cedularif) and $cedularif != 0) {
-
-                $query = mysqli_query($conection,"SELECT * FROM cliente  
-                WHERE (cedularif = '$cedularif' AND idcliente != $idClient)") ;
-            $result = mysqli_fetch_array($query);
-            $result = count($result);
-            }
-
-			if ($result > 0) {
-				$alert = '<p class="msg_error">Cedula o RIF Ya existe</p>';
-			} else {
-                if ($cedularif == '') {
-                    $cedularif = 'cedularif';
-                
 			
-
 					$sql_update = mysqli_query($conection,"UPDATE cliente
-															SET cedularif = $cedularif, nombre = '$nombre', correo = '$correo', telefono = '$teledono', direccion = '$direccion' 
-															WHERE idcliente = $idCliente");
+															SET cedularif = '$cedularif', nombre = '$nombre', correo = '$correo', telefono = '$telefono', direccion = '$direccion' 
+															WHERE idcliente = $idClient");
 					
 
 				if ($sql_update) {
@@ -50,8 +32,8 @@
 			}
 		 	
 	}
-}
-    }
+
+    
 //Mostrar
 
 if (empty($_REQUEST['id'])) {
