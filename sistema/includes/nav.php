@@ -19,7 +19,7 @@
 				<li><a href="">Credito</a>
 					<ul>
 					<li><a href="">Nuevo Credito</a></li>
-					<li><a href="">Editar Editar</a></li>
+					<li><a href="">Editar Credito</a></li>
 					</ul>
 					
 				</li>
