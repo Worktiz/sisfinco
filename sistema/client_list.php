@@ -62,15 +62,15 @@ include "../conexion.php";
 	$result = mysqli_num_rows($query);
 	if ($result > 0) {
 		while ($data = mysqli_fetch_array($query)) {	
-            if ($data['cedularif'] == 0) {
+            if ($data['cedula'] == 0) {
                 $cedularif = 'N/P';
             }else{
-                $cedularif = $data['cedularif'];
+                $cedularif = $data['cedula'];
             }		
 			?>
 			<tr>
 				<td><?php echo $data['idcliente']; ?></td>
-				<td><?php echo $data['cedularif']; ?></td>
+				<td><?php echo $data['cedula']; ?></td>
 				<td><?php echo $data['nombre']; ?></td>
 				<td><?php echo $data['correo']; ?></td>
 				<td><?php echo $data['telefono']; ?></td>
