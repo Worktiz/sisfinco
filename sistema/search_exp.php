@@ -17,11 +17,6 @@ session_start();
 <body>
 	<?php include "includes/header.php"; ?>
     <section>
-			<input type="text" name="busqueda" id="busqueda" placeholder="Buscar..." class="search">
-		</section>
-
-		<section id="tabla_resultado">
-		<!-- AQUI SE DESPLEGARA NUESTRA TABLA DE CONSULTA -->
-		</section
+	</section>
 </body>
 </html>
